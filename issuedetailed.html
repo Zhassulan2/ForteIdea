@@ -40,31 +40,30 @@
         <tr>
             <th scope="col" class="navbar">
                 <div>
-                    {{record.title}}
+                    Тема: {{record.title}}
                 </div>
                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-warning" v-on:click="goCreateIssue"><i class="fa fa-pencil"></i> {{changeIssue}}</button>
                     <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"></i> {{deleteIssue}}</button>
                 </div>
 
-
             </th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <th scope="col">{{record.description}}</th>
+            <th scope="col">Описание: {{record.description}}</th>
         </tr>
         </tbody>
     </table>
     <div class="alert alert-secondary" role="alert">
-        <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#collapseExample"
+        <div class="btn-toolbar" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-dark" data-toggle="collapse" data-target="#collapseExample"
                     aria-expanded="false" aria-controls="collapseExample">Автор
             </button>
-            <button type="button" class="btn btn-primary">Количество <i class="fas fa-heart"></i> <span
+            <button type="button" class="btn btn-dark">Количество <i class="fas fa-heart"></i> <span
                     class="badge badge-light">9</span></button>
-            <button type="button" class="btn btn-primary">Нравиться <i class="fas fa-heart"></i></button>
+            <button type="button" class="btn btn-dark">Нравиться <i class="fas fa-heart"></i></button>
         </div>
         <div class="collapse" id="collapseExample">
             <div class="card card-body alert alert-secondary" role="alert">
@@ -77,7 +76,7 @@
         <label for="exampleInputEmail1">Добавить комментарий</label>
         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                placeholder="Введите комментарии" v-model="message">
-        <button type="submit" class="btn btn-primary" v-on:click="addComment">{{sendComment}}</button>
+        <button type="submit" class="btn btn-dark" v-on:click="addComment">{{sendComment}}</button>
         <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
     </div>
 
