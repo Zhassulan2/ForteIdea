@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+
+
+    <title>ForteIdea</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="icon" href="./img/fortebank-favicon.png" type="image/png">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<!--
+<script>
+    let login = 'zbayghozha';
+    let username = 'Administrator';
+    let password = 'manage';
+    let xhr = new XMLHttpRequest();
+    let url = 'http://wmappdevuv02.fortebank.com:5555/restv2/customerAuth/restorePassword';
+
+    let body =
+        'username=' + encodeURIComponent(username) + '' +
+        '&password=' + encodeURIComponent(password) + '' +
+        '&login=' + encodeURIComponent(login);
+
+
+
+    let data = new FormData();
+    data.append('user', 'person');
+    data.append('pwd', 'password');
+    data.append('organization', 'place');
+    data.append('requiredkey', 'key');
+    console.log('data');
+    console.log(data);
+
+    xhr.withCredentials = true;
+
+    xhr.open('POST', url, false, username, password);
+    xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    xhr.setRequestHeader('Access-Control-Allow-Credentials', true);
+    /*
+    xhr.onreadystatechange = function() {//Call a function when the state changes.
+        if(xhr.readyState == 4 && xhr.status == 200) {
+            console.log(xhr.responseText);
+        }
+    }
+    */
+    console.log(xhr);
+    console.log(body);
+    xhr.send(body);
+
+    if (xhr.status != 200) {
+        // обработать ошибку
+        console.log( xhr.status + ': ' + xhr.statusText ); // пример вывода: 404: Not Found
+    } else {
+        // вывести результат
+        console.log( xhr.responseText );
+    }
+</script>
+-->
+<!--
+<script>
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://www.example.org/protected-data.php", true);
+    xhr.withCredentials = true;
+    xhr.setRequestHeader("Authorization", 'Basic ' + btoa('myuser:mypswd'));
+    xhr.onload = function () {
+        console.log(xhr.responseText);
+    };
+    xhr.send();
+</script>
+<script>
+    let login = 'zbayghozha';
+    let username = 'Administrator';
+    let password = 'manage';
+    let url = 'http://wmappdevuv02.fortebank.com:5555/restv2/customerAuth/restorePassword';
+    let headers = new Headers();
+
+    headers.append('Content-Type', 'application/json');
+    headers.append('Accept', 'application/json');
+
+    headers.append('Access-Control-Allow-Origin', 'http://localhost:63342');
+    headers.append('Access-Control-Allow-Credentials', 'true');
+
+    headers.append('GET', 'POST', 'OPTIONS');
+
+    headers.append('Authorization', 'Basic ' + base64.encode(username + ":" + password));
+    /*
+    fetch(sign_in, {
+        //mode: 'no-cors',
+        credentials: 'include',
+        method: 'POST',
+        headers: headers
+    })
+        .then(response => response.json())
+        .then(json => console.log(json))
+        .catch(error => console.log('Authorization failed : ' + error.message));
+    }*/
+    const proxyurl = "http://headproxy02.fortebank.com:8083/proxy.pac";
+    //const url = "https://example.com"; // site that doesn’t send Access-Control-*
+    fetch(proxyurl + url) // https://cors-anywhere.herokuapp.com/https://example.com
+        .then(response => response.text())
+        .then(contents => console.log(contents))
+        .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
+</script>-->
+
+
+<div id="createIssue" align="center">
+
+    <div id="navbar" class="navbar navbar-light bg-light">
+        <div class="navbar-brand">
+            <a href="file:///C:/Users/zbayghozha/Google Диск/forteIdea/index.html">{{mainBtnText}}</a>
+        </div>
+        <div id="navbar_left_btns" class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" v-on:click="goMain">{{goBackText}}</button>
+            <button class="btn btn-outline-success my-2 my-sm-0" v-on:click="exitSite">{{exitTxt}}</button>
+        </div>
+    </div>
+
+    <div class="alert alert-secondary" role="alert">
+        <form>
+            <div>
+
+            </div>
+            <div class="form-group">
+                <label for="inputIssueName">Тема</label>
+                <input type="text" v-model="record.title" class="form-control" id="inputIssueName" placeholder="Введите тему">
+                <button type="submit" class="btn btn-primary">Принять</button>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Введите Содержание</label>
+                <textarea v-model="record.description"  class="form-control" id="exampleFormControlTextarea1" rows="20"></textarea>
+            </div>
+        </form>
+    </div>
+
+
+
+</div>
+
+
+<script src="./vue/createIssueVue.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

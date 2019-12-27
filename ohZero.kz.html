@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>ohZero.kz</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="KVH2rpGnyVhwkYvN6GCLF4Eu5toSS71nuWnBDq4b2eU"/>
+    <meta name="yandex-verification" content="49b0ba94a68723c2"/>
+    <meta name="keywords"
+          content="создание сайтов, создание сайта, разработка сайта, разработка сайтов, разработка веб сайтов, разработка web сайтов, разработка сайтов Казахстан">
+    <meta name="description"
+          content="Мы разработаем сайт, который произведет правильное первое впечатление на ваших будущих клиентов!">
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/w3.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <!--<link rel="manifest" href="./manifest.json">-->
+</head>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="sidebar red collapse top large padding"
+     style="z-index: 3; width: 300px; font-weight: bold; display: none;" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="button hide-large display-topleft"
+       style="width:100%;font-size:22px">ohZero.kz</a>
+    <div class="container">
+        <h3 class="padding-16"><b>Меню</b></h3>
+    </div>
+    <div class="bar-block">
+        <a href="#services" onclick="w3_close()" class="bar-item button hover-white">Главная</a>
+        <a href="#showcase" onclick="w3_close()" class="bar-item button hover-white">Проекты</a>
+        <a href="#sites" onclick="w3_close()" class="bar-item button hover-white">Тарифы</a>
+        <a href="#contact" onclick="w3_close()" class="bar-item button hover-white">Контакты</a>
+        <a href="#sendMsg" onclick="w3_close()" class="bar-item button hover-white">Отправить сообщение</a>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="container top hide-large red xlarge padding"><!--padding  -->
+    <a href="javascript:void(0)" class="button red margin-right" onclick="w3_open()">☰</a>
+    <span>ohZero.kz</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="overlay hide-large" onclick="w3_close()" style="cursor: pointer; display: none;"
+     title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="main" style="margin-left:340px;margin-right:40px">
+    <!-- Header -->
+    <div class="container" id="services">
+        <h1 class="xxxlarge text-red"><b>О нас</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
+        <p>Мы IT-компания, занимающаяся разработкой, продвижением сайтов и мобильных приложений.
+            Предлагаем оптимальные IT-решения.
+            Проконсультируем по любым интересующим Вас вопросам в сфере IT.
+            Всегда рады Вам помочь!</p>
+    </div>
+
+    <div class="container" id="showcase">
+        <h1 class="xxxlarge text-red"><b>Проекты</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
+    </div>
+
+    <!-- Photo grid (modal) -->
+    <div class="row-padding">
+        <div class="half">
+            <a href="./site1"><img alt="Первый сайт" src="./diningroom.jfif" style="width:100%"></a>
+        </div>
+        <div class="half">
+            <a href="./site2"><img alt="Второй сайт" src="./screenShot.JPG" style="width:100%"></a>
+        </div>
+    </div>
+    <!-- Modal for full size images on click
+    <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="button black xxlarge display-topright">×</span>
+        <div class="modal-content animate-zoom center transparent padding-64">
+            <img id="img01" alt="при click срабатывает" src="" class="image">
+            <p id="caption"></p>
+        </div>
+    </div>
+    -->
+    <!-- Designers -->
+    <div class="container" id="designers" style="margin-top:10px">
+        <h1 class="xxxlarge text-red"><b>Команда</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
+        <p>The best team in the world.</p>
+        <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum
+            consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
+        </p>
+    </div>
+
+    <!-- Packages / Pricing Tables -->
+    <div class="container" id="sites">
+        <h1 class="xxxlarge text-red"><b>Тарифы</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
+        <p>Вы также можете ознакомиться с нашим коммерческим предложением
+            <a href="./docs/commercial_proposal.docx" title="коммерческим предложением" target="_blank"
+               class="hover-opacity"><strong>коммерческим предложением(*нажми меня*)</strong></a>
+        </p>
+    </div>
+
+    <div class="row-padding">
+        <div class="half margin-bottom">
+            <ul class="ul light-grey center">
+                <li class="dark-grey xlarge padding-32">Тариф - Dev</li>
+                <li class="padding-16">Разработка сайта</li>
+                <li class="padding-16">
+                    <h2>от 50 000тг.</h2>
+                </li>
+                <li class="light-grey padding-24">
+                    <!--
+                    <button class="white padding-large hover-black">
+                        <a href="#sendMsg">Заказать</a>
+                    </button>
+                    -->
+                    <form action="http://ohzero.kz#contact">
+                        <input class="button white padding-large hover-black" type="submit" value="Заказать"/>
+                    </form>
+
+                </li>
+            </ul>
+        </div>
+
+        <div class="half">
+            <ul class="ul light-grey center">
+                <li class="red xlarge padding-32">Тариф - Pro</li>
+                <li class="padding-16">Разработка</li>
+                <li class="padding-16">Сопровождение</li>
+                <li class="padding-16">
+                    <h2>от 100 000тг.</h2>
+                    <span class="opacity">1 доработка в месяц</span>
+                </li>
+                <li class="light-grey padding-24">
+                    <form action="http://ohzero.kz#contact">
+                        <input class="button red padding-large hover-black" type="submit" value="Заказать"/>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Services -->
+
+    <div class="container" id="contact" style="margin-top:15px" itemscope itemtype="http://schema.org/Organization">
+        <h1 class="xxxlarge text-red"><b>Контакты</b></h1>
+        <hr style="width:50px;border:5px solid red" class="round">
+        <p>Вы можете связаться с нами:</p>
+        <p>сайт: http://<span itemprop="name">ohZero.kz</span></p>
+        <p>Тел.: <a href="tel:+77064449731"><span itemprop="telephone">+7 706 444 9731</span></a></p>
+        <p>Тел.: <a href="tel:+77064009731"><span itemprop="telephone">+7 706 400 9731</span></a></p>
+        <p>Почта: <a href="mailto:ohzero@mail.ru"><span itemprop="email">ohZero@mail.ru</span></a></p>
+        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Адрес:
+            <span itemprop="addressLocality">г. Нур-Султан </span>
+            <span itemprop="streetAddress">ул. Момышулы 2в, </span>
+            <span itemprop="postalCode">010000</span>
+        </p>
+    </div>
+
+
+    <!-- Отправить сообщение -->
+    <div id="sendMsg">
+        <div class="container" >
+            <h1 class="xxxlarge text-red"><b>Отправить сообщение</b></h1>
+            <hr style="width:50px;border:5px solid red" class="round">
+            <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting
+                new
+                people!</p>
+            <form action="./action_page.php">
+                <div class="section">
+                    <label>Имя</label>
+                    <input class="input border" type="text" name="name" required="">
+                </div>
+                <div class="section">
+                    <label>Ваши контакты</label>
+                    <input class="input border" type="text" name="contact" required="">
+                </div>
+                <div class="section">
+                    <label>Сообщение</label>
+                    <input class="input border" type="text" name="message" required="">
+                </div>
+                <button type="submit" class="button block padding-large red margin-bottom">Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+    <!-- End page content -->
+
+
+    <!-- W3.CSS Container -->
+    <div class=" container padding-32" style="padding-right:58px">
+        <div class="light-gray">
+            <div class="social instagram">
+                <a rel="nofollow" target="_blank" href="https://www.instagram.com/ohzero.kz"><i
+                        class="fa fa-instagram fa-2x"></i></a>
+            </div>
+            <div class="social vk">
+                <a rel="nofollow" target="_blank" href="https://vk.com/ohzerokz"><i
+                        class="fa fa-vk fa-2x"></i></a>
+            </div>
+            <div class="social telegram">
+                <a rel="nofollow" target="_blank" href="https://telegram.me/@Raushan_Baigozha"><i
+                        class="fa fa-paper-plane fa-2x"></i></a>
+            </div>
+            <div class="social whatsapp">
+                <a rel="nofollow" target="_blank" href="https://api.whatsapp.com/send?phone=77064449731"><i
+                        class="fa fa-whatsapp fa-2x"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        /*
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+        */
+    </script>
+</div>
+</body>
+</html>

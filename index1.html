@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- All the files that are required -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+    <title>ForteIdea</title>
+    <script src="./js/vue.js"></script>
+    <link rel="stylesheet" href="./css/mystyle.css">
+</head>
+<body>
+<div id="app">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+                <!--
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>-->
+            </ul>
+
+            <a class="btn btn-outline-success my-2 my-sm-0" href="#">{{ loginBtnText }}</a>
+            <!--
+            <form class="form-inline my-2 my-lg-0">
+                <input corm-controllass="f mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+            -->
+        </div>
+
+    </nav>
+    <div ><!-- тело-->>
+        <!-- Where all the magic happens -->
+        <!-- LOGIN FORM -->
+        <div class="text-center" style="padding:50px 0">
+            <div class="logo">login</div>
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <form id="login-form" class="text-left">
+                    <div class="login-form-main-message"></div>
+                    <div class="main-login-form">
+                        <div class="login-group">
+                            <div class="form-group">
+                                <label for="lg_username" class="sr-only">Username</label>
+                                <input type="text" class="form-control" id="lg_username" name="lg_username" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="lg_password" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="lg_password" name="lg_password" placeholder="password">
+                            </div>
+                            <div class="form-group login-group-checkbox">
+                                <input type="checkbox" id="lg_remember" name="lg_remember">
+                                <label for="lg_remember">remember</label>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="etc-login-form">
+                        <p>forgot your password? <a href="#">click here</a></p>
+                        <p>new user? <a href="#">create new account</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- end:Main Form -->
+        </div>
+
+        <!-- REGISTRATION FORM -->
+        <div class="text-center" style="padding:50px 0">
+            <div class="logo">register</div>
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <form id="register-form" class="text-left">
+                    <div class="login-form-main-message"></div>
+                    <div class="main-login-form">
+                        <div class="login-group">
+                            <div class="form-group">
+                                <label for="reg_username" class="sr-only">Email address</label>
+                                <input type="text" class="form-control" id="reg_username" name="reg_username" placeholder="username">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_password" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="reg_password" name="reg_password" placeholder="password">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_password_confirm" class="sr-only">Password Confirm</label>
+                                <input type="password" class="form-control" id="reg_password_confirm" name="reg_password_confirm" placeholder="confirm password">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="reg_email" class="sr-only">Email</label>
+                                <input type="text" class="form-control" id="reg_email" name="reg_email" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="reg_fullname" class="sr-only">Full Name</label>
+                                <input type="text" class="form-control" id="reg_fullname" name="reg_fullname" placeholder="full name">
+                            </div>
+
+                            <div class="form-group login-group-checkbox">
+                                <input type="radio" class="" name="reg_gender" id="male" placeholder="username">
+                                <label for="male">male</label>
+
+                                <input type="radio" class="" name="reg_gender" id="female" placeholder="username">
+                                <label for="female">female</label>
+                            </div>
+
+                            <div class="form-group login-group-checkbox">
+                                <input type="checkbox" class="" id="reg_agree" name="reg_agree">
+                                <label for="reg_agree">i agree with <a href="#">terms</a></label>
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="etc-login-form">
+                        <p>already have an account? <a href="#">login here</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- end:Main Form -->
+        </div>
+
+        <!-- FORGOT PASSWORD FORM -->
+        <div class="text-center" style="padding:50px 0">
+            <div class="logo">forgot password</div>
+            <!-- Main Form -->
+            <div class="login-form-1">
+                <form id="forgot-password-form" class="text-left">
+                    <div class="etc-login-form">
+                        <p>When you fill in your registered email address, you will be sent instructions on how to reset your password.</p>
+                    </div>
+                    <div class="login-form-main-message"></div>
+                    <div class="main-login-form">
+                        <div class="login-group">
+                            <div class="form-group">
+                                <label for="fp_email" class="sr-only">Email address</label>
+                                <input type="text" class="form-control" id="fp_email" name="fp_email" placeholder="email address">
+                            </div>
+                        </div>
+                        <button type="submit" class="login-button"><i class="fa fa-chevron-right"></i></button>
+                    </div>
+                    <div class="etc-login-form">
+                        <p>already have an account? <a href="#">login here</a></p>
+                        <p>new user? <a href="#">create new account</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- end:Main Form -->
+        </div>
+    </div>
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                loginBtnText: 'Регистрация'
+            }
+        })
+    </script>
+</div>
+<!--
+<h1>Hello, world!</h1>
+
+ Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

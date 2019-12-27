@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ddfc064f-dd2d-41e9-a858-19f9cf900b4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/css/mystyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/forgotpassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/instruction.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/forgotpasswordVue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/indexVue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue/mainVue.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="C:\Users\zbayghozha\Desktop\forteIdea\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1RxwCR9p01iVvQSfiyVaK3sGRvn" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/ohzero" />
+    <property name="settings.editor.selected.configurable" value="http.proxy" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zbayghozha\Google Диск\forteIdea" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zbayghozha\Google Диск\forteIdea\vue" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ddfc064f-dd2d-41e9-a858-19f9cf900b4c" name="Default Changelist" comment="" />
+      <created>1570621926878</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570621926878</updated>
+      <workItem from="1570621928914" duration="241000" />
+      <workItem from="1570622459045" duration="3228000" />
+      <workItem from="1570701369375" duration="6983000" />
+      <workItem from="1571218386926" duration="14466000" />
+      <workItem from="1571309911862" duration="2333000" />
+      <workItem from="1571715768778" duration="63000" />
+      <workItem from="1571715995564" duration="21126000" />
+      <workItem from="1571827954834" duration="2779000" />
+      <workItem from="1571856624257" duration="100000" />
+      <workItem from="1571886987436" duration="939000" />
+      <workItem from="1571934774571" duration="15000" />
+      <workItem from="1571940177524" duration="85000" />
+      <workItem from="1572407648373" duration="7424000" />
+      <workItem from="1572424812247" duration="3291000" />
+      <workItem from="1572435809282" duration="2756000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
